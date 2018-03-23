@@ -16,7 +16,7 @@ class Order
 
     public function placeOrder()
     {
-        $user = $_POST['userObject'];
+        //$user = $_POST['userObject'];
         $customer = array("username" => "ajith.ranatunga@netstarter.com", "password" => "nets_123");
         $baseCustomer = array(
             "firstname"=> "Ajith",
