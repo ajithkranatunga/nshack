@@ -8,9 +8,6 @@ foreach (glob("lib/*.php") as $filename) {
 foreach (glob("Controller/*.php") as $filename) {
     require_once($filename);
 }
-foreach (glob("Dao/*.php") as $filename) {
-    require_once($filename);
-}
-foreach (glob("Model/*.php") as $filename) {
+foreach (glob("Api/*.php") as $filename) {
     require_once($filename);
 }
