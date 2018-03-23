@@ -60,9 +60,9 @@ class Router
                 /**
                  * If controller file is not found, the error/404 page is loading
                  */
-                require_once(ABSPATH . "Controller/error.php");
+                /*require_once(ABSPATH . "Controller/error.php");
                 $controller = new Error();
-                return false;
+                return false;*/
             }
         } else {
             /** if url/controller is not set, load home page */

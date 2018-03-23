@@ -18,6 +18,5 @@ class Customer
         $customer = array("username" => "roni_cost@example.com", "password" => "roni_cost3@example.com");
         $customerToken = $this->customerApi->customerLogin($customer);
         echo json_encode($customerToken);
-
     }
 }
