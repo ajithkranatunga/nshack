@@ -60,6 +60,7 @@ class Order
         $shipping = $this->cartApi->estimateShippingCost($customerAuthCode,$shippingAddress);
         $billingInfo = $this->cartApi->setBillingAndShippingInfo($customerAuthCode, $billingData);
         $order = $this->cartApi->sendPaymentInfo($customerAuthCode, $paymentInfo);
-        echo (int)$order;
+        $orderId = json_encode($order);
+        echo $orderId;
     }
 }
